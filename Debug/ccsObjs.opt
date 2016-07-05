@@ -1,0 +1,1 @@
+"./main.obj" "../AM437x_PRU_SS1.cmd" -llibc.a 
