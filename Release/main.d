@@ -10,6 +10,7 @@ main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/include/stddef.h
 main.obj: C:/ti/pru-software-support-package/include/rsc_types.h
 main.obj: C:/ti/pru-software-support-package/include/pru_types.h
 main.obj: C:/ti/pru-software-support-package/include/pru_virtio_ids.h
+main.obj: ../GpiECAP.h
 
 ../main.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/include/stdint.h: 
@@ -21,3 +22,4 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/include/stddef.h:
 C:/ti/pru-software-support-package/include/rsc_types.h: 
 C:/ti/pru-software-support-package/include/pru_types.h: 
 C:/ti/pru-software-support-package/include/pru_virtio_ids.h: 
+../GpiECAP.h: 

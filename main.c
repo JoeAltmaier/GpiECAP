@@ -14,9 +14,7 @@
 #include <pru_intc.h>
 #include <pru_iep.h>
 #include "rsc_table_pru.h"
-
-volatile register uint32_t __R30;
-volatile register uint32_t __R31;
+#include "GpiECAP.h"
 
 
 void StartTimestampCounter();
@@ -41,14 +39,7 @@ uint32_t ReadTimestamp();
 		last value R31
 #endif
 
-typedef struct {
-			uint32_t edgeUpDown; // trigger on rising edge (1) or falling edge (0)
-			uint32_t differential; // capture ts (false) or dTs(true)
-			uint32_t ECAP[30][4];
-			int aICap[32];
-		} T_ECAP;
-
-T_ECAP *pEcap = (T_ECAP*)0x10000; // Start of shared memory
+T_ECAP *pEcap = (T_ECAP*)SHARED_MEMORY; // Start of shared memory
 
 uint32_t last_sample = 0;
 uint32_t tsLast[30];
