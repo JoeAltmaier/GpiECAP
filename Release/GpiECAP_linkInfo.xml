@@ -2,7 +2,7 @@
 <link_info>
    <banner>PRU Linker PC v2.1.2</banner>
    <copyright>Copyright (c) 2012-2015 Texas Instruments Incorporated</copyright>
-   <link_time>0x577d752a</link_time>
+   <link_time>0x577d7d9b</link_time>
    <link_errors>0x0</link_errors>
    <output_file>GpiECAP.out</output_file>
    <entry_point>

@@ -16,6 +16,8 @@
 #include "rsc_table_pru.h"
 #include "GpiECAP.h"
 
+volatile register uint32_t __R30;
+volatile register uint32_t __R31;
 
 void StartTimestampCounter();
 void StopTimestampCounter();

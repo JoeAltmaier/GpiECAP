@@ -8,10 +8,6 @@
 #ifndef GPIECAP_H_
 #define GPIECAP_H_
 
-volatile register uint32_t __R30;
-volatile register uint32_t __R31;
-
-
 typedef struct {
 			uint32_t edgeUpDown; // trigger on rising edge (1) or falling edge (0)
 			uint32_t differential; // capture ts (false) or dTs(true)

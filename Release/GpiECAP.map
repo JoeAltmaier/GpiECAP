@@ -1,7 +1,7 @@
 ******************************************************************************
                      PRU Linker PC v2.1.2                      
 ******************************************************************************
->> Linked Wed Jul 06 16:16:26 2016
+>> Linked Wed Jul 06 16:52:27 2016
 
 OUTPUT FILE NAME:   <GpiECAP.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 00000000
