@@ -9,8 +9,10 @@ Enter new include paths into the project
     "C:\ti\pru-software-support-package\include"
     "C:\ti\pru-software-support-package\include\am437x"
 
-Build Release target
+Check out this project into your workspace
 
-Copy from /{your workspace}/GpiEcap/Release/GpiECAP.out to /{sdcard}/rootfs/lib/firmware/am437x-pru1_0-fw
+Build the Release target
 
-GpiECAP.out is an elf file, suitable for loading into the PRU.
+Copy from /{your workspace}/PRU_GpiEcap/Release/GpiECAP.out to /{sdcard}/rootfs/lib/firmware/am437x-pru1_0-fw
+
+GpiECAP.out is an elf file, suitable for loading into the PRU. Its called 'am437x-pru1_0-fw' for the pru loader (no elf extension).
