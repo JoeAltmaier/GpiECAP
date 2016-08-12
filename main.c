@@ -71,7 +71,7 @@ int main(void)
 	while (1)
 	{
 		uint32_t sample = __R31;
-		uint32_t change = sample ^ last_sample;
+		uint32_t change = sample ^ pEcap->sample;
 
 		if (change)
 		{
@@ -102,8 +102,8 @@ int main(void)
 
 			}
 
-			last_sample = sample;
-			trigger = last_sample ^ pEcap->edgeUpDown;
+			pEcap->sample = sample;
+			trigger = sample ^ pEcap->edgeUpDown;
 		}
 	}
 
