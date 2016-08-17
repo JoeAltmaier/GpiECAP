@@ -130,6 +130,9 @@ void StartTimestampCounter()
 	/* Clear overflow status register */
 	CT_IEP.TMR_GLB_STS_bit.CNT_OVF = 0x1;
 
+	CT_IEP.TMR_GLB_CFG_bit.DEFAULT_INC = 0x1;
+	CT_IEP.TMR_GLB_CFG_bit.CMP_INC = 0x1;
+
 	/* Disable compensation */
 	CT_IEP.TMR_COMPEN_bit.COMPEN_CNT = 0x0;
 
