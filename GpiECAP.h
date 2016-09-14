@@ -12,6 +12,7 @@ typedef struct {
 			uint32_t edgeUpDown; // trigger on rising edge (1) or falling edge (0)
 			uint32_t differential; // capture ts (false) or dTs(true)
 			uint32_t sample;
+			uint32_t edgeDetected;
 			uint32_t ECAP[30][4];
 			int aICap[32];
 		} T_ECAP;

@@ -100,6 +100,7 @@ int main(void)
 					bit <<= 1;
 				}
 
+				pEcap->edgeDetected |= edge;
 			}
 
 			pEcap->sample = sample;
