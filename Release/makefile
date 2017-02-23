@@ -139,7 +139,7 @@ all: GpiECAP.out
 GpiECAP.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: PRU Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/bin/clpru" -v3 -O2 --define=am4376 --define=icss1 --define=pru0 --diag_wrap=off --diag_warning=225 --display_error_number --endian=little --hardware_mac=on -z -m"GpiECAP.map" --stack_size=0x100 --heap_size=0x100 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/include" --reread_libs --define=ICSS1_PRU_CORE=1 --diag_wrap=off --display_error_number --warn_sections --xml_link_info="GpiECAP_linkInfo.xml" --rom_model -o "GpiECAP.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/bin/clpru" -v3 -O2 --define=am4376 --define=icss1 --define=pru0 --diag_wrap=off --display_error_number --diag_warning=225 --endian=little --hardware_mac=on -z -m"GpiECAP.map" --heap_size=0x100 --stack_size=0x100 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-pru_2.1.2/include" --reread_libs --define=ICSS1_PRU_CORE=1 --warn_sections --display_error_number --diag_wrap=off --xml_link_info="GpiECAP_linkInfo.xml" --rom_model -o "GpiECAP.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

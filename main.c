@@ -54,6 +54,8 @@ int main(void)
 
 	pEcap->differential = 0x3FFF; // all differential
 	pEcap->edgeUpDown = 0x3FFF; // all rising edge
+	pEcap->sample = __R31;
+	pEcap->edgeDetected = 0;
 
 	uint32_t trigger = last_sample ^ pEcap->edgeUpDown;
 
@@ -71,7 +73,7 @@ int main(void)
 	while (1)
 	{
 		uint32_t sample = __R31;
-		uint32_t change = sample ^ pEcap->sample;
+		uint32_t change = (sample ^ pEcap->sample) & 0x3FFFFFFF;
 
 		if (change)
 		{
